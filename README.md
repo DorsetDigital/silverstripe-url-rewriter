@@ -1,6 +1,6 @@
 # Silverstripe URL Rewriter
 
-Provides a simple method of rewriting the URLs of assets.
+Provides a simple method of rewriting the URLs of assets.   This was developed primarily for use with the SilverStripe S3 assets module, allowing a quick method of using a CloudFront distribution to serve assets instead of linking directly to the S3 bucket.
 
 
 # Requirements
