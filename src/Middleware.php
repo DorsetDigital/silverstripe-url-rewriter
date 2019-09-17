@@ -50,14 +50,6 @@ class Middleware implements HTTPMiddleware
 
 
     /**
-     * @config
-     *
-     * Add dns-prefetch links to the html head
-     * @var boolean
-     */
-    private static $add_prefetch = false;
-
-    /**
      * Process the request
      * @param HTTPRequest $request
      * @param $delegate
