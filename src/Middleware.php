@@ -83,7 +83,7 @@ class Middleware implements HTTPMiddleware
 
     private function canRun()
     {
-        $confEnabled = $this->config()->get('cdn_rewrite');
+        $confEnabled = $this->config()->get('rewrite_enabled');
         $devEnabled = ((!Director::isDev()) || ($this->config()->get('enable_in_dev')));
         $validConf = (($this->config()->get('old_url') != '') && ($this->config()->get('new_url') != ""));
 

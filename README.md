@@ -21,15 +21,15 @@ Name: rewriteconfig
 ---
 
 DorsetDigital\URLRewriter\Middleware:
+  rewrite_enabled: true
   old_url: 'https://old.example.com'
-  new_url: 'https://cdn-distribution.example.com'
-  cdn_rewrite: true
+  new_url: 'https://cdn-distribution.example.com'  
   enable_in_dev: true
 ```
 
 The options are hopefully fairly self explanatory:
 
-* `cdn_rewrite` - globally enables and disables the module (default false - disabled)
+* `rewrite_enabled` - globally enables and disables the module (default false - disabled)
 * `old_url` - the full URL you wish to rewrite (eg. https://somebucket.s3.aws.com)
 * `new_url` - the new URL you wish to use (eg. https://somedistribution.cloudfront.net)
 * `enable_in_dev` - enable the CDN in dev mode (default false)
