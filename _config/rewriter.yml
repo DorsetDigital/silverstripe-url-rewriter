@@ -7,4 +7,4 @@ SilverStripe\Core\Injector\Injector:
   SilverStripe\Control\Director:
     properties:
       Middlewares:
-        CustomRewriteMiddleware: %$DorsetDigital\URLRewriter\Middleware
+        CustomRewriteMiddleware: '%$DorsetDigital\URLRewriter\Middleware'
